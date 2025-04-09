@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="277.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controleur.ObjetVoleController">
+    <TextField fx:id="typeField" promptText="Type" />
+    <TextField fx:id="marqueField" promptText="Marque" />
+    <TextField fx:id="modeleField" promptText="Modèle" />
+    <TextField fx:id="numeroSerieField" promptText="Numéro de série" />
+    <DatePicker fx:id="dateVolPicker" promptText="Date de vol" />
+    <TextField fx:id="statutField" promptText="Statut" />
+    <TextField fx:id="proprietaireIdField" promptText="ID du propriétaire" />
+    <Button onAction="#ajouterObjet" text="Ajouter Objet" />
+    <Button onAction="#rechercherObjet" text="Rechercher Objet" />
+    <TextArea fx:id="resultatsArea" prefHeight="200.0" prefWidth="200.0" />
+</VBox>
